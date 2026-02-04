@@ -1,0 +1,13 @@
+{
+  "name": "recipe-app",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@recipe-app/web",
+    "build": "npm run build --workspace=@recipe-app/web",
+    "lint": "npm run lint --workspace=@recipe-app/web"
+  }
+}
